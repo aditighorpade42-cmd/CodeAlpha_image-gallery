@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Responsive Image Gallery</title>
+  <link rel="stylesheet" href="image.css" /> 
+</head>
+<body>
+
+  <header>
+    <h1>Responsive Image Gallery</h1>
+    <div class="lead">Gallery with categories, lightbox, filters, hover effects, and responsive layout.</div>
+  </header>
+
+  <!-- Filters / Controls -->
+  <div class="controls">
+    <div class="controls-left">
+      <div class="filter-group">
+        <button class="btn active" data-filter="all">All</button>
+        <button class="btn" data-filter="nature">Nature</button>
+        <button class="btn" data-filter="city">City</button>
+        <button class="btn" data-filter="people">People</button>
+        <button class="btn" data-filter="food">Food</button>
+      </div>
+
+      <div class="filter-group">
+        <button class="btn" data-style="none">Normal</button>
+        <button class="btn" data-style="grayscale">Grayscale</button>
+        <button class="btn" data-style="sepia">Sepia</button>
+        <button class="btn" data-style="boost">Vivid</button>
+      </div>
+    </div>
+
+    <div class="filter-search">
+      <input id="searchInput" type="search" placeholder="Search titles..." />
+      <button class="btn" id="shuffleBtn">Shuffle</button>
+    </div>
+  </div>
+
+  <!-- Gallery -->
+  <main class="gallery-wrap">
+    <div class="gallery-grid" id="gallery">
+      <article class="card" data-category="nature" data-title="Sunset Ridge"
+        data-full="https://wallpaperaccess.com/full/1288947.jpg">
+        <img src="https://wallpaperaccess.com/full/1288947.jpg"
+          alt="Sunset over a ridge" />
+        <div class="meta"><div class="title">Sunset Ridge</div><div class="tag">Nature</div></div>
+      </article>
+      
+      <!-- City Image -->
+<article class="card" data-category="city" data-title="Urban Vibes"
+  data-full="https://images.pexels.com/photos/3346227/pexels-photo-3346227.jpeg?cs=srgb&dl=cityscape-3346227.jpg&fm=jpg">
+  <img src="https://images.pexels.com/photos/3346227/pexels-photo-3346227.jpeg?cs=srgb&dl=cityscape-3346227.jpg&fm=jpg"
+    alt="City View" />
+  <div class="meta"><div class="title">Urban Vibes</div><div class="tag">City</div></div>
+</article>
+
+
+<!-- People Image -->
+<article class="card" data-category="people" data-title="Joyful Soul's"
+  data-full="https://images.pexels.com/photos/1000445/pexels-photo-1000445.jpeg?cs=srgb&dl=silhouette-photography-of-group-of-people-jumping-during-1000445.jpg&fm=jpg">
+  <img src="https://images.pexels.com/photos/1000445/pexels-photo-1000445.jpeg?cs=srgb&dl=silhouette-photography-of-group-of-people-jumping-during-1000445.jpg&fm=jpg"
+    alt="People" />
+  <div class="meta"><div class="title">Joyful Soul's</div><div class="tag">People</div></div>
+</article>
+
+<!-- Food Image -->
+<article class="card" data-category="food" data-title="Flavours Unfolded"
+  data-full="https://as2.ftcdn.net/v2/jpg/02/39/39/17/1000_F_239391735_n3nBwHrEOvuvmIkLntlL30s4wND8SP55.jpg">
+  <img src="https://as2.ftcdn.net/v2/jpg/02/39/39/17/1000_F_239391735_n3nBwHrEOvuvmIkLntlL30s4wND8SP55.jpg"
+    alt="Food" />
+  <div class="meta"><div class="title">Flavours Unfolded</div><div class="tag">Food</div></div>
+</article>
+
+    </div>
+  </main>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <div class="lightbox-inner">
+      <div class="lightbox-image" id="lightboxImage">
+        <button class="nav prev" id="prevBtn">◀</button>
+        <img src="" alt="" id="lightboxImg" />
+        <button class="nav next" id="nextBtn">▶</button>
+      </div>
+      <div>
+        <div id="lightboxTitle"></div>
+        <div id="lightboxCategory"></div>
+        <button class="btn" id="downloadBtn">Download</button>
+        <button class="close" id="closeBtn">✕</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="image.js"></script> 
+</body>
+</html>

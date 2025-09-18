@@ -1,0 +1,136 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0f1724;
+  color: #fff;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+h1 {
+  margin: 0;
+  font-size: 2em;
+  color: #32ebf1db;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  font-family: serif;
+}
+
+.title
+{
+  font-size: 1.2em;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+.filter-group {
+  display: inline-flex;
+  gap: 5px;
+}
+
+.btn {
+  background: #1f2937;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.btn:hover,
+.btn.active {
+  background: #3b82f6;
+}
+
+.filter-search input {
+  padding: 6px;
+  border-radius: 6px;
+  border: none;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 12px;
+}
+
+.gallery-grid{
+  width: 100%;
+  height: 250%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.card {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+.card:hover {
+  transform: scale(1.05);
+  transform: skew(5deg);
+}
+
+.card food{
+  width: 100%;
+  height: 200px;
+}
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: filter 0.3s;
+}
+.card .meta {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0,0,0,0.6);
+  width: 100%;
+  padding: 5px;
+}
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0,0,0,0.8);
+}
+.lightbox.active {
+  display: flex;
+}
+.lightbox img {
+  max-width: 90%;
+  max-height: 80vh;
+}
+.close {
+  margin-top: 10px;
+  background: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.nav {
+  background: rgba(0,0,0,0.5);
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
