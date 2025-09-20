@@ -39,8 +39,15 @@ image-gallery/
 4.Enjoy browsing your image gallery! 🎉
 
 
-📸 Screenshots
-Examples 
+## 📸 Screenshots
+
+### Gallery View
+Here are some sample images from the project:
+
+![Image 1](images/img1.jpg)
+![Image 2](images/img2.jpg)
+![Image 3](images/img3.jpg)
+![Image 4](images/img4.jpg)
 
 
 📌 Future Enhancements
