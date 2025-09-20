@@ -39,15 +39,15 @@ image-gallery/
 4.Enjoy browsing your image gallery! 🎉
 
 
-📌 Future Enhancements
+## 📌 Future Enhancements
 
--Add image categories (Nature, People, City, etc.)
+Add image categories (Nature, People, City, etc.)
 
--Add slideshow / autoplay feature
+Add slideshow / autoplay feature
 
--Add search filter for images
+Add search filter for images
 
--Improve UI with animations
+Improve UI with animations
 
 
 ## 📜 License
